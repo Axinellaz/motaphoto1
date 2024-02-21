@@ -2431,3 +2431,59 @@ Stack trace:
 [10-Feb-2024 15:43:05 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 93
 [10-Feb-2024 15:45:56 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 93
 [10-Feb-2024 15:46:12 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 93
+[12-Feb-2024 14:24:10 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\MAMP\htdocs\motaphoto1\wp-admin\includes\class-core-upgrader.php on line 413
+[12-Feb-2024 16:30:41 UTC] PHP Warning:  Undefined array key "page" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 30
+[12-Feb-2024 16:30:41 UTC] PHP Warning:  Undefined array key "offset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 31
+[12-Feb-2024 17:25:53 UTC] PHP Warning:  Undefined variable $previous_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 86
+[12-Feb-2024 17:26:52 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[12-Feb-2024 17:27:26 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[12-Feb-2024 17:27:38 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[12-Feb-2024 17:28:27 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[12-Feb-2024 17:30:08 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[12-Feb-2024 17:38:19 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[12-Feb-2024 17:44:20 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[12-Feb-2024 17:45:09 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 97
+[14-Feb-2024 13:53:31 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\MAMP\htdocs\motaphoto1\wp-admin\includes\list-table.php on line 109
+[15-Feb-2024 20:58:34 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[15-Feb-2024 20:58:48 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[15-Feb-2024 20:58:52 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[15-Feb-2024 20:58:55 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[17-Feb-2024 13:21:16 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[17-Feb-2024 13:21:26 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 12:10:27 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 13:36:53 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 18:19:38 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 18:20:07 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 18:20:16 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 18:21:26 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 18:21:38 UTC] PHP Warning:  Undefined array key "ofsset" in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\functions.php on line 34
+[19-Feb-2024 22:59:53 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 96
+[19-Feb-2024 23:00:12 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 96
+[20-Feb-2024 09:59:33 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\MAMP\htdocs\motaphoto1\wp-includes\class-wpdb.php on line 2349
+[20-Feb-2024 10:11:40 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\MAMP\htdocs\motaphoto1\wp-includes\blocks\post-navigation-link.php on line 124
+[20-Feb-2024 10:11:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\MAMP\\htdocs\\...', 'fr_FR')
+#1 C:\MAMP\htdocs\motaphoto1\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php on line 806
+[20-Feb-2024 16:41:28 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\MAMP\htdocs\motaphoto1\wp-includes\blocks\footnotes.php on line 90
+[20-Feb-2024 16:41:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\MAMP\\htdocs\\...', 'fr_FR')
+#1 C:\MAMP\htdocs\motaphoto1\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php on line 806
+[20-Feb-2024 16:59:29 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\MAMP\htdocs\motaphoto1\wp-includes\blocks\index.php on line 8
+[20-Feb-2024 16:59:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\MAMP\\htdocs\\...', 'fr_FR')
+#1 C:\MAMP\htdocs\motaphoto1\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\MAMP\htdocs\motaphoto1\wp-includes\l10n.php on line 806
+[20-Feb-2024 17:45:40 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 96
+[21-Feb-2024 10:16:22 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 96
+[21-Feb-2024 10:19:23 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 96

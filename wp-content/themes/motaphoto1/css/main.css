@@ -422,44 +422,57 @@ nav > ul > li > a:hover{
 
 .btn_filtres{
     height: 20vh;
-    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-}
-
-.btn-select{
-    font-family: 'Poppins', sans-serif;
-    padding: 0.75rem;
-    text-transform: capitalize;
-    border-color: #B8BBC2;
-    border-radius: 5px;
-    width: 20vw;
 }
 
 .btn_select_categories_formats {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+}
+/* B O U T O N  S E L E C T 
+
+
+/*  H O V E R  B T N  S E L E C T */
+
+/* Style de base pour le conteneur Select2 */
+.select2-container {
+  width: 45% !important;
+  font-size: 0.77rem;
+  border-radius: 20px;
 }
 
-.btn_select_categories_formats select {
- /* display: none; Masquer le select */
+.select2-selection__rendered{
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 15px;
 }
 
-.btn_select_categories_formats .btn-select {
-  padding: 8px 16px;
-  background-color: transparent;
-  border: 1px solid #ccc;
-  cursor: pointer;
+.select2-selection{
+    height: 35px !important;
 }
 
-.btn_select_categories_formats.btn-select.hovered {
-  color: var(--white-color);
-  background-color: var(--red-color);
+.select2-results__option--highlighted{
+    background-color: var(--red-color);
+    color: var(--white-color);
 }
 
+.select2-container--default .select2-selection--single:focus,
+.select2-container--default .select2-selection--multiple:focus {
+    border: 2px solid var(--blue-select);
+}
 
+.select2-results__option {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.5rem;
+    padding-left: 15px; 
+
+}
 
 .left-margin{
     margin-right: 20px;

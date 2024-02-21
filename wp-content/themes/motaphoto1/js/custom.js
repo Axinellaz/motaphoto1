@@ -12,22 +12,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
 // BOUTON CONTACT SINGLE POST AVEC LE REMPLISSAGE AUTO D'UNE LIGNE DU FORMULAIRE 
 
 document.addEventListener("DOMContentLoaded", function() {
     
-    var contactBtn = document.getElementById('contact-btn');
+    const contactBtn = document.querySelector('#contact-btn');
 
     contactBtn.addEventListener('click', function(event) {
             event.preventDefault();
 
-            var reference = contactBtn.getAttribute('data-reference');
+            let reference = contactBtn.getAttribute('data-reference');
             document.getElementById('field-ref').value = reference;
 
             jQuery("#contact").fadeIn();
             return false;
-        });
     });
+});
 
 /*  Hover option btn select */
 

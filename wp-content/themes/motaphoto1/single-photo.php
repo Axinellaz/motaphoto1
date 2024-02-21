@@ -82,10 +82,9 @@ get_header();
                                 jQuery(document).ready(function($) {
                                     // Gestion du survol de la flèche précédente
                                     $('.container_arrow_nav .previous').hover(function() {
-                                        console.log('yo');
                                         var prevImage = '<?php echo $previous_thumbnail_url; ?>';
-                                        console.log(prevImage);
-                                        $('#prev-preview').prop('src', prevImage);
+                                        console.log(prevImage , 'btn-prev');
+                                        $('#prev-preview').attr('src', prevImage);
                                         $('#prev-preview').addClass('selected');
                                         $('#next-preview').removeClass('selected');
                                         
@@ -95,7 +94,7 @@ get_header();
                                     // Gestion du survol de la flèche suivante
                                     $('.container_arrow_nav .next').hover(function() {
                                         var nextImage = '<?php echo $next_thumbnail_url; ?>';
-                                        console.log(nextImage);
+                                        console.log(nextImage, 'btn-next');
                                         $('#next-preview').prop('src', nextImage);
                                         $('#next-preview').addClass('selected');
                                         $('#prev-preview').removeClass('selected');

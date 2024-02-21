@@ -22,7 +22,7 @@ Template Name: All photos event
         <div class="btn_filtres">
 
             <div class="btn_select_categories_formats">
-                <select class="btn-select" name="categories" id="categories-select">
+                <select class="btn-select-motaphoto" name="categories" id="categories-select">
                     <option value="">Catégories</option>
                     <option value="reception">Réception</option>
                     <option value="mariage">Mariage</option>
@@ -31,14 +31,14 @@ Template Name: All photos event
                 </select>
 
             
-                <select class="btn-select" name="formats" id="formats-select">
+                <select class="btn-select-motaphoto" name="formats" id="formats-select">
                     <option value="">Formats</option>
                     <option value="paysage">Paysage</option>
                     <option value="portrait">Portrait</option>
                 </select>
             </div>
 
-            <select class="btn-select left-margin" name="date" id="date-select">
+            <select class="btn-select-motaphoto left-margin" name="date" id="date-select">
                 <option value=""> Trier par </option>
                 <option value="recentes"> à partir des plus récentes</option>
                 <option value="ancienne">à partir des plus anciennes</option>
@@ -46,11 +46,13 @@ Template Name: All photos event
         </div>
 
         <section class="all_items_photos" id="all_items_photos">
-    
+            <script>
+                    
+            </script>
         </section>
 
         <div class="container_btn_load" >
-            <button id="load-more-btn">Charger plus</button>
+            <button id="load-more-btn" data-action="load_more_images">Charger plus</button>
         </div>
 
         
