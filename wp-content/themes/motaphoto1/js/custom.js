@@ -12,12 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
 // BOUTON CONTACT SINGLE POST AVEC LE REMPLISSAGE AUTO D'UNE LIGNE DU FORMULAIRE 
 
-document.addEventListener("DOMContentLoaded", function() {
-    
+document.addEventListener("DOMContentLoaded", function() { 
     const contactBtn = document.querySelector('#contact-btn');
 
     contactBtn.addEventListener('click', function(event) {
@@ -31,6 +28,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-/*  Hover option btn select */
 
 

@@ -6,28 +6,26 @@ get_header();
     <main id="main" class="site-main">
 
         <?php
-        while (have_posts()) : the_post();
-            $post_id = get_the_ID();
+            while (have_posts()) : the_post();
+                $post_id = get_the_ID();
         ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="entry-header_single_post">
 
                     <div class="container_cpt_taxonomie_cf_single_post">
-
                         <h2 class="entry-title"><?php the_title(); ?></h2>
                         <p>References : <?php the_field('references', $post_id); ?></p>
                         <p> <?php the_terms($post_id, 'categorie', 'Categorie : '); ?></p>
                         <p><?php the_terms($post_id, 'format', 'Format : '); ?> </p>
                         <p>Type : <?php the_field('types', $post_id); ?></p>
                         <p>Année : <?php echo get_the_date('Y', $post_id); ?> </p>
-
                     </div>
 
                     <div class="img_event">
                         <?php
                             if (has_post_thumbnail()) {
-                                the_post_thumbnail('large');
+                                the_post_thumbnail('grande-miniature');
                             }
                         ?>
                     </div>
@@ -83,32 +81,23 @@ get_header();
                                     // Gestion du survol de la flèche précédente
                                     $('.container_arrow_nav .previous').hover(function() {
                                         var prevImage = '<?php echo $previous_thumbnail_url; ?>';
-                                        console.log(prevImage , 'btn-prev');
                                         $('#prev-preview').attr('src', prevImage);
                                         $('#prev-preview').addClass('selected');
                                         $('#next-preview').removeClass('selected');
-                                        
-                                        
                                     });
 
                                     // Gestion du survol de la flèche suivante
                                     $('.container_arrow_nav .next').hover(function() {
                                         var nextImage = '<?php echo $next_thumbnail_url; ?>';
-                                        console.log(nextImage, 'btn-next');
                                         $('#next-preview').prop('src', nextImage);
                                         $('#next-preview').addClass('selected');
                                         $('#prev-preview').removeClass('selected');
-                                        
                                     });
                                 });
-
-                                
-                        </script>
+                            </script>
                         
                         </div>
-
                     </div>
-
                 </div>
 
                 <div class="entry-content_bottom_page">
@@ -118,6 +107,7 @@ get_header();
                             <?php
                                 // Récupére les termes de la taxonomie associée à l'image principale
                                 $main_image_terms = wp_get_post_terms($post->ID, 'categorie', array("fields" => "slugs"));
+                                $image_id = get_post_thumbnail_id();
             
                                 $related_args = array(
                                     'post_type' => 'photo', 
@@ -137,21 +127,24 @@ get_header();
                                 if ($related_query->have_posts()) :
                                     while ($related_query->have_posts()) : $related_query->the_post();
                             ?>
-                                    <div class="related_images">
-                                        <?php if (has_post_thumbnail()): ?>
-                                            <div class="hover_lightbox__container image-wrapper">
-                                                <?php the_post_thumbnail('large'); ?>
-                                                <div class="icons hover_lightbox__overlay overlay_hover">
-                                                    <a href="<?php esc_url(get_permalink())?>" class="btn_hover_lightbox" id="open-article-icon">
-                                                        <i class="fa-regular fa-eye"></i>
-                                                    </a>
-                                                    <button class="fullscreen-btn btn_hover_lightbox" id="fullscreen-icon">
-                                                        <i class="fa-solid fa-expand"></i>
-                                                    </button>          
-                                                </div>
-                                            </div>
-                                        <?php endif; ?>
+                            <div class="related_images">
+                                <?php if (has_post_thumbnail()): ?>
+                                    <div class="hover_lightbox__container image-wrapper">
+                                        <?php $image_id = get_post_thumbnail_id(); ?>
+                                        <?php $thumbnail_url = esc_url(get_the_post_thumbnail_url(get_the_ID(), 'grande-miniature')); ?>
+                                        <img src="<?php echo $thumbnail_url?>" data-image-id="<?php echo $image_id;  ?>" >
+                                        <div class="icons hover_lightbox__overlay overlay_hover">
+                                            <a href="<?php echo esc_url(get_permalink()); ?>" class="btn_hover_lightbox" id="open-article-icon">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </a>
+
+                                            <button class="fullscreen-btn btn_hover_lightbox open-lightbox" id="fullscreen-icon" data-image-url="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>">
+                                                <i class="fa-solid fa-expand"></i>
+                                            </button>          
+                                        </div>
                                     </div>
+                                <?php endif; ?>
+                            </div>
 
                                 <?php
                                     endwhile;

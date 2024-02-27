@@ -213,6 +213,10 @@ nav > ul > li > a:hover{
 .container_cpt_taxonomie_cf_single_post {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .container_cpt_taxonomie_cf_single_post .entry-header_single_post {
@@ -237,14 +241,14 @@ nav > ul > li > a:hover{
     font-size: 3rem;
     font-style: italic;
     max-width: 250px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
  .container_cpt_taxonomie_cf_single_post > p{
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
     color: var(--black-color);
-    margin: 3px;
+    margin: 10px 0;
     letter-spacing: 3px;
 }
 
@@ -252,11 +256,6 @@ nav > ul > li > a:hover{
     color: var(--black-color);
     text-decoration: none;
  }
-
-.container_cpt_taxonomie_cf_single_post{
-    width: 50%;
-    height: 100vh;
-}
 /* SECTION HEADER -  IMG RIGHT */
 .img_event{
     width: 100vh;
@@ -266,6 +265,7 @@ nav > ul > li > a:hover{
     width: 100%;
     height: 100%; 
     object-fit: cover; 
+    position: relative;
 }
 /* SECTION MILIEU ENTRY CONTENT */
 
@@ -422,9 +422,9 @@ nav > ul > li > a:hover{
 
 .btn_filtres{
     height: 20vh;
-    width: 100%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -434,6 +434,22 @@ nav > ul > li > a:hover{
   justify-content: space-between;
   width: 35vw;
 }
+
+.container_btns_select{
+    width: 100%;
+    height: 32vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_btn_select_data{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
 /* B O U T O N  S E L E C T 
 
 
@@ -441,7 +457,7 @@ nav > ul > li > a:hover{
 
 /* Style de base pour le conteneur Select2 */
 .select2-container {
-  width: 45% !important;
+  width: 47% !important;
   font-size: 0.77rem;
   border-radius: 20px;
 }
@@ -572,31 +588,27 @@ nav > ul > li > a:hover{
 .txt_title_overlay{
     position: absolute;
     text-transform: uppercase;
-    bottom: 15%;
+    bottom: 10%;
     left: 1%;
 }
 
 .txt_categorie_overlay{
     position: absolute;
     text-transform: uppercase;
-    bottom: 15%;
+    bottom: 10%;
     right: -40%;
     margin: 0 10px 0 0;
 }
 
- #fullscreen-icon{
-    right: 2%;
-    top: 2%;
-    background-color: rgba(0, 0, 0, 0.5);
+.fullscreen-btn{
+    right: 5px;
+    top: 10px;
     border-radius: 15px;
-    padding: 15px;
+    background: rgba(0, 0, 0, 0.6) !important;
+    width: 30px !important;
+    height: 30px !important;
 }
-
-#fullscreen-icon i {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-}
+ 
 
 #open-article-icon{
     top: 50%;
@@ -620,7 +632,7 @@ nav > ul > li > a:hover{
 
 /* Boutons L i g h t b o x */
 .lightbox button:hover{
-    opacity: 1;
+    font-weight: 800;
 }
 .nav-btn{
     font-family: 'Space Mono', monospace;
@@ -631,7 +643,6 @@ nav > ul > li > a:hover{
    height: 100%; 
    position: fixed;
    z-index: 11;
-   opacity: .5;
     cursor: pointer;
     transition: opacity .3s;
     color: var(--white-color);
@@ -641,9 +652,14 @@ nav > ul > li > a:hover{
     margin: -3px 5px;
 }
 #btnAfficherReference{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    position: absolute;
     height: 20vh;
-    bottom: 0;
-    left: 15%;
+    bottom: -107px;
+    color: var(--white-color);
+    left: 35%;
+    text-transform: uppercase;
 }
 
 #btnAfficherCategorie{
@@ -666,6 +682,11 @@ nav > ul > li > a:hover{
     background: none;
     z-index: 70;
     cursor: pointer;
+}
+
+.close-btn > img{
+    width: 15px;
+    height: 15px;
 }
 /* Image L i g h t b o x */
 .lightbox__container img{
@@ -703,9 +724,9 @@ nav > ul > li > a:hover{
 /*     F O O T E R       */ 
 .site__footer{
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     position: relative;
-    padding: 10px;
+    padding: 5px 0;
 }
 .site__footer::after{
     content: "";
@@ -719,6 +740,7 @@ nav > ul > li > a:hover{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    margin: 0;
 }
 
 .site__footer > ul > li {
@@ -832,15 +854,23 @@ nav > ul > li > a:hover{
         justify-content: center;
         height: 30vh;
         margin: 15px 0;
-        width: 100%
+        width: 100%;
+        gap:15% ;
     }
-
+    .select2-container{
+        width: 100% !important;
+    }
     .btn-select{
         width: 65vw;
     }
     .btn_select_categories_formats{
         display: flex;
         flex-direction: column;
+        height: 15vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
     }
 
     select{
