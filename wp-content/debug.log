@@ -2661,3 +2661,14 @@ Stack trace:
 [26-Feb-2024 23:25:57 UTC] PHP Warning:  Attempt to read property "format" on null in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\front-page.php on line 33
 [26-Feb-2024 23:26:28 UTC] PHP Warning:  Attempt to read property "term_id" on array in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\front-page.php on line 33
 [26-Feb-2024 23:26:28 UTC] PHP Warning:  Attempt to read property "term_id" on array in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\front-page.php on line 33
+[27-Feb-2024 18:29:17 UTC] Erreur d’événement de replanification de tâche pour le crochet wp_privacy_delete_old_export_files. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"hourly","args":[],"interval":3600}
+[27-Feb-2024 18:39:38 UTC] PHP Warning:  Array to string conversion in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\templates_part\modale_lightbox.php on line 19
+[27-Feb-2024 18:41:41 UTC] PHP Warning:  Array to string conversion in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\templates_part\modale_lightbox.php on line 24
+[27-Feb-2024 18:45:17 UTC] PHP Warning:  Array to string conversion in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\templates_part\modale_lightbox.php on line 24
+[28-Feb-2024 09:33:57 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\MAMP\htdocs\motaphoto1\wp-admin\includes\class-wp-site-health.php on line 3636
+[28-Feb-2024 21:24:33 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 91
+[28-Feb-2024 21:40:58 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 91
+[29-Feb-2024 20:47:03 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 91
+[29-Feb-2024 20:52:02 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 91
+[29-Feb-2024 20:52:58 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 91
+[29-Feb-2024 21:02:32 UTC] PHP Warning:  Undefined variable $next_thumbnail_url in C:\MAMP\htdocs\motaphoto1\wp-content\themes\motaphoto1\single-photo.php on line 91

@@ -9,21 +9,12 @@
     $post_id = get_the_ID();
     $image_id = $post_id;
    ?>
-  <div class="lightbox__container" data-image-id="<?php echo esc_attr($image_id); ?>">
+  <div class="lightbox__container" data-image-id="<?php echo esc_attr($image_id); ?>" data-reference="">
     <img class="img_lightbox" src="" alt="">
   </div>
 
-  <p id="btnAfficherReference" > <?php echo the_title()  ?></p>
-  <p>
-    <?php
-    $post_id = get_the_ID();
-      $categories = wp_get_object_terms($image_id, 'categorie');
-      if (!empty($categories) && !is_wp_error($categories)) {
-          foreach ($categories as $category) {
-              echo $category->name . ' ';
-          }
-      }
-    ?>
-  </p>
+  <p id="btnAfficherReference" ></p>
+  
+  <p id="btnAfficherCategorie">  </p>
     
 </div>

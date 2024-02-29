@@ -13,7 +13,7 @@
     <div id="primary" class="content-area">
         <main id="main_front_page" class="site-main">
 
-            <div class="container_btns_select">
+        <div class="container_btns_select">
                 <div class="btn_filtres">
                         <select class="btn-select-motaphoto" name="categories" id="categories-select">
                             <option value="">Catégories</option>
@@ -28,7 +28,6 @@
                             <option value="">Formats</option>
                             <?php
                             $formats = get_terms('format');
-                            var_dump($formats);
                             foreach ($formats as $format) {
                                 echo '<option value="' . $format->term_id . '">' . $format->name . '</option>';
                             }
@@ -63,9 +62,7 @@
 
                 $attachments = get_posts($args);
 
-                foreach ($attachments as $attachment) {
-                    
-                }
+              
                 ?>
             </section>
 

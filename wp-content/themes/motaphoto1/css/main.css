@@ -23,6 +23,7 @@ body.lightbox-open .votre-classe-de-hover {
     margin: auto;
 }
 
+
 /*        H e a d e r        */
 
 header{
@@ -58,7 +59,7 @@ nav{
 
 nav > ul {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items: center;
     list-style: none;
 }
@@ -71,7 +72,7 @@ nav > ul > li {
 
 nav > ul > li > a {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: var(--black-color);
     text-decoration: none;
 }
@@ -107,7 +108,7 @@ nav > ul > li > a:hover{
 .popup__overlay{
    display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 5000; 
     padding-top: 44px; 
     left: 0;
     top: 0;
@@ -416,6 +417,10 @@ nav > ul > li > a:hover{
 .site-main{
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* B O U T O N  S E L E C T   F  I  L  T  R  E  S  */
@@ -592,7 +597,7 @@ nav > ul > li > a:hover{
     left: 1%;
 }
 
-.txt_categorie_overlay{
+.txt_title_categorie_overlay{
     position: absolute;
     text-transform: uppercase;
     bottom: 10%;
@@ -656,16 +661,21 @@ nav > ul > li > a:hover{
     font-size: 0.7rem;
     position: absolute;
     height: 20vh;
-    bottom: -107px;
+    bottom: -110px;
     color: var(--white-color);
-    left: 35%;
+    left: 30%;
     text-transform: uppercase;
 }
 
 #btnAfficherCategorie{
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 0.7rem;
+    position: absolute;
     height: 10vh;
-    bottom: 0;
-    right: 15%;
+    bottom:-40px ;
+    right: 35%;
 }
 #nextBtn{
     right: 2%;
@@ -757,8 +767,38 @@ nav > ul > li > a:hover{
 
 /* *******  R E S P O N S I V E ******* */
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+
+  .all_items_photos .hover_lightbox__container{
+    width: 47vh;
+    height: 47vh;
+  } 
+  .container_btns_select{
+        flex-direction: column;
+        justify-content: center;
+        height: 21vh;
+  }
+
+  .btn_filtres{
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+  }
+
+  .container_btn_load{
+    width: 0;
+    margin-left: -200px;
+  }
+
+  .container_btn_select_data{
+    justify-content: center;
+    margin-top: 16px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px){
    
+
  /*  S I N G L E  P O S T  */ 
     .container_cpt_taxonomie_cf_single_post{
         height: auto;
@@ -852,7 +892,7 @@ nav > ul > li > a:hover{
     .btn_filtres{
         flex-direction: column;
         justify-content: center;
-        height: 30vh;
+        height: 15vh;
         margin: 15px 0;
         width: 100%;
         gap:15% ;
@@ -870,6 +910,14 @@ nav > ul > li > a:hover{
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 100%;
+    }
+    .container_btns_select{
+        margin-bottom: 100px;
+        height: 20vh;
+    }
+
+    .container_btn_select_data{
         width: 100%;
     }
 
@@ -893,6 +941,11 @@ nav > ul > li > a:hover{
 
     .container_btn_load{
         margin: 0;
+        width: 25%;
+    }
+
+    #btn-load-more{
+     margin: 20px 0 20px 70px;
     }
     
 /* M E N U  B U R G E R */
@@ -978,3 +1031,8 @@ nav > ul > li > a:hover{
 
 }
 
+@media only screen and (max-width: 500px){
+    .container_btn_load{
+        width: 85%;
+    }
+}

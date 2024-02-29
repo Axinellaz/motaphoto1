@@ -1,2 +1,9 @@
+<?php 
+get_header()
+?>
+<div class="index_container">
 
-<p>index</p>
+</div>
+<?php 
+get_footer()
+?>

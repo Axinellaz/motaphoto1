@@ -36,7 +36,7 @@ get_header();
                     <div class="items_container_entry_content">
                         <h3>Cette photo vous intéresse ?</h3>
                         <a id="contact-btn" href="" data-reference="<?php the_field('references', $post_id); ?>">
-                            <button type="button">Contact</button>
+                            <button id="contact-btn" type="button">Contact</button>
                         </a>
                     </div>
 

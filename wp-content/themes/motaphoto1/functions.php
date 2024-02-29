@@ -1,6 +1,8 @@
 <?php 
 function motaphoto_register_assets() {
-    // Inclure jQuery
+    // Charger jQuery à partir d'un CDN
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0');
     wp_enqueue_script('jquery');
 
     // Inclure Select2
@@ -8,6 +10,7 @@ function motaphoto_register_assets() {
     wp_enqueue_script('select2', "https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js", array('jquery'), '4.1.0-rc.0', true);
 
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0', true);
+    wp_enqueue_script( 'menu-burger', get_template_directory_uri() . '/js/menu-burger.js', array( 'jquery' ), '1.0', true);
     // Localiser vos scripts_params sur les scripts personnalisés
     wp_localize_script(
         'scripts', // Utilisez le nom du script personnalisé où vous utilisez les paramètres,
@@ -19,7 +22,6 @@ function motaphoto_register_assets() {
 
     // Déclarer fichiers CSS et JavaScript personnalisés
     wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array(), '1.0');
-    wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), '1.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'motaphoto_register_assets' );
 
