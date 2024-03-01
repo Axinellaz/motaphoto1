@@ -23,6 +23,9 @@ body.lightbox-open .votre-classe-de-hover {
     margin: auto;
 }
 
+#primary.content-area {
+    overflow-x: hidden;
+}
 
 /*        H e a d e r        */
 
