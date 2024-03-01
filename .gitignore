@@ -1,1 +1,8 @@
 wp-content/ai1wm-backups/localhost-motaphoto1-20240113-021222-scrjvl.wpress
+wp-content/ai1wm-backups/localhost-motaphoto1-20240227-223346-nj1bt2.wpress
+wp-content/ai1wm-backups/localhost-motaphoto1-20240228-214958-xfct50.wpress
+wp-content/ai1wm-backups/localhost-motaphoto1-20240229-121359-918lh1.wpress
+wp-content/ai1wm-backups/localhost-motaphoto1-20240229-220332-l929wo.wpress
+wp-content/ai1wm-backups/localhost-motaphoto1-20240229-222849-wjl04n.wpress
+# Ignorer les sauvegardes All-in-One WP Migration
+wp-content/ai1wm-backups/*.wpress
